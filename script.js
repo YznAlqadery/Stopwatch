@@ -67,6 +67,10 @@ function resetTimer() {
   minutesElement.textContent = `00`;
   secondsElement.textContent = `00`;
   millisecondsElement.textContent = `00`;
+  hour = 0;
+  minute = 0;
+  second = 0;
+  millisecond = 0;
   startButton.disabled = false;
 }
 
