@@ -40,18 +40,21 @@ function updateTimer() {
   millisecond++;
   millisecondsElement.textContent = `${String(millisecond)}`.padStart(2, 0);
   if (millisecond === 100) {
-    millisecond = 0;
     second++;
+    millisecond = 0;
+    millisecondsElement.textContent = `${String(millisecond)}`.padStart(2, 0);
     secondsElement.textContent = `${String(second)}`.padStart(2, 0);
   }
   if (second === 60) {
-    second = 0;
     minute++;
+    second = 0;
+    secondsElement.textContent = `${String(second)}`.padStart(2, 0);
     minutesElement.textContent = `${String(minute)}`.padStart(2, 0);
   }
   if (minute === 60) {
-    minute = 0;
     hour++;
+    minute = 0;
+    minutesElement.textContent = `${String(minute)}`.padStart(2, 0);
     hoursElement.textContent = `${String(minute)}`.padStart(2, 0);
   }
 }
