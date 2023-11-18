@@ -8,6 +8,9 @@ body {
   background-color: #101820;
   color: #fee715;
 }
+h1 {
+  margin-top: 10px;
+}
 header,
 .container {
   background-color: #fee715;
